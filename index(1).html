@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MTÜ Elama – Erasmus+ projects for youth and youth workers</title>
+<meta name="description" content="MTÜ Elama is an Estonian non-profit organisation running Erasmus+ projects for young people and youth workers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b2433; --muted:#55607a; --paper:#f7f8fb; --line:#dde1ea;
+    --orange:#f26a1b; --orange-dark:#b84a08; --deep:#14213d;
+    --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.6;font-size:1.05rem}
+  a{color:var(--orange-dark)}
+  a:focus-visible,.btn:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+  header.hero{background:var(--orange);color:var(--deep);padding:2.5rem 0 4rem}
+  nav{display:flex;justify-content:space-between;align-items:center;font-weight:600}
+  nav a{color:var(--deep);text-decoration:none;margin-left:1.5rem}
+  nav a:first-child{margin-left:0}
+  .wordmark{font-size:clamp(5rem,22vw,15rem);font-weight:800;letter-spacing:-.05em;line-height:.9;margin:3rem 0 .5rem}
+  .gloss{font-size:1.1rem;font-weight:600;margin:0 0 2rem}
+  .hero h1{font-size:clamp(1.6rem,4vw,2.5rem);font-weight:600;line-height:1.2;max-width:22ch;margin:0 0 2rem}
+  .btn{display:inline-block;background:var(--deep);color:#fff;padding:.85rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:600}
+  .btn:hover{background:#0b1426}
+  section{padding:4.5rem 0;border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(1.6rem,3.5vw,2.2rem);line-height:1.15;margin:0 0 1.25rem;letter-spacing:-.01em}
+  p{max-width:62ch;margin:0 0 1rem}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+  .project{border-left:6px solid var(--orange);padding-left:1.5rem}
+  .project + .project{margin-top:2.5rem}
+  .project h3{margin:0 0 .5rem;font-size:1.3rem}
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1.5rem}
+  .team h3{margin:0;font-size:1.15rem}
+  .team p{color:var(--muted);margin:.25rem 0 0}
+  footer{padding:2.5rem 0;color:var(--muted);font-size:.95rem}
+  @media (max-width:720px){.two,.team{grid-template-columns:1fr;gap:1.5rem}nav a{margin-left:1rem}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <span>MTÜ Elama</span>
+      <div><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="wordmark" aria-hidden="true">elama</div>
+    <p class="gloss">Estonian for “to live”</p>
+    <h1>Erasmus+ projects for young people and youth workers, based in Estonia.</h1>
+    <a class="btn" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap two">
+      <div>
+        <h2>Who we are</h2>
+        <p>MTÜ Elama is a non-profit organisation based in Estonia. We design and run international projects funded by Erasmus+, bringing young people and youth workers together to learn from each other.</p>
+      </div>
+      <div>
+        <h2>What we do</h2>
+        <p>We organise training courses and mobility projects for youth workers (Key Action 1) and develop cooperation projects with partner organisations across Europe (Key Action 2).</p>
+        <p>We are open to new partnerships. If you work with young people and want to build a project together, write to us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>The AI-augmented Youth Worker: From Guardian to Guide</h3>
+        <p>A training course for youth workers in Estonia, held with partner organisations from Italy, Turkey and Bulgaria. It looks at how to use generative AI responsibly in youth work.</p>
+      </div>
+      <div class="project">
+        <h3>Against the Current: Travelling Differently</h3>
+        <p>A youth exchange held in France, where we take part as a partner organisation. It looks at sustainable tourism, digitalisation and techniques to spread blue citizenship.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrap">
+      <h2>Team</h2>
+      <div class="team">
+        <div><h3>Lucía</h3><p>Social media, dissemination, project writing and project management.</p></div>
+        <div><h3>Juhan</h3><p>Project management, writing, administration, partner contacts and finance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom:0">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Write to us about partnerships, project ideas or questions about our work.</p>
+      <p><a class="btn" href="mailto:info@mtuelama.eu">info@mtuelama.eu</a></p>
+      <p>Posti 4, Viljandi, Estonia</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 MTÜ Elama. Registry code: 80667770. OID: E10422362</div>
+</footer>
+
+</body>
+</html>
